@@ -1,9 +1,10 @@
 'use client';
 
 import React from 'react';
-import { Shield, Lock, Zap, CheckCircle2 } from 'lucide-react';
+import { Lock, Zap, CheckCircle2 } from 'lucide-react';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
+import { NexusLogo } from '../ui/NexusLogo';
 
 interface ShieldStatusBannerProps {
   onTriggerSimulatedAttack?: () => void;
@@ -20,8 +21,8 @@ export function ShieldStatusBanner({
         <div className="space-y-2">
           <div className="flex items-center gap-2.5 flex-wrap">
             <span className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#006239] text-[#3ecf8e] border border-[#3ecf8e]/30 text-xs font-semibold font-mono">
-              <Shield className="w-3.5 h-3.5" />
-              MESH SHIELD: ACTIVE & SYNCHRONIZED
+              <NexusLogo className="w-3.5 h-3.5 text-[#3ecf8e]" />
+              MESH NETWORK: ACTIVE & SYNCHRONIZED
             </span>
             <Badge variant="outline" size="sm" className="font-mono text-[11px] bg-[#141414] text-[#a0a0a0] border-[#2e2e2e]">
               <Lock className="w-3 h-3 mr-1 text-[#3ecf8e]" />

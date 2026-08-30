@@ -5,7 +5,7 @@ import { useSite } from '@/lib/site-context';
 import {
   Search,
   Download,
-  ShieldAlert,
+  AlertCircle,
   Plus,
   ChevronLeft,
   ChevronRight,
@@ -173,7 +173,7 @@ export function AttackLogsTable() {
       <div className="bg-[#1a1a1a] border border-[#2e2e2e] rounded-xl overflow-hidden shadow-card-subtle">
         {filteredAttacks.length === 0 ? (
           <div className="p-10 text-center">
-            <ShieldAlert className="w-8 h-8 text-[#525252] mx-auto mb-2" />
+            <AlertCircle className="w-8 h-8 text-[#525252] mx-auto mb-2" />
             <h4 className="text-xs font-semibold text-[#ffffff]">No attack logs match your criteria</h4>
             <p className="text-xs text-[#a0a0a0] mt-1">
               Try adjusting your search query or threat category filter.

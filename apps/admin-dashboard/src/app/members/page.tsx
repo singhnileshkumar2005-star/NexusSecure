@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Plus, ShieldCheck, Star, Server } from 'lucide-react';
+import { Plus, CheckCircle2, Star, Server } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';
@@ -97,7 +97,7 @@ export default function MembersPage() {
           title="Fleet Mitigations"
           value={formatNumber(totalFleetMitigations)}
           description="Neutralized at edge perimeters"
-          icon={<ShieldCheck className="w-4 h-4 text-[#3ecf8e]" />}
+          icon={<CheckCircle2 className="w-4 h-4 text-[#3ecf8e]" />}
           trend={{ value: '+14% network effect', isPositive: true }}
         />
       </div>

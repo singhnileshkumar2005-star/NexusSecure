@@ -3,9 +3,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Shield, Radio, RotateCw } from 'lucide-react';
+import { Radio, RotateCw } from 'lucide-react';
 import { SiteSelector } from './SiteSelector';
 import { useSite } from '@/lib/site-context';
+import { NexusLogo } from './NexusLogo';
 
 export function Navbar() {
   const pathname = usePathname();
@@ -26,7 +27,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 group">
               <div className="w-8 h-8 rounded-lg bg-[#1a1a1a] border border-[#2e2e2e] text-[#3ecf8e] flex items-center justify-center transition-transform group-hover:scale-105">
-                <Shield className="w-4 h-4 text-[#3ecf8e]" />
+                <NexusLogo className="w-4 h-4 text-[#3ecf8e]" />
               </div>
               <div className="flex items-center gap-2">
                 <span className="font-semibold text-sm text-[#ffffff] font-display tracking-tight">

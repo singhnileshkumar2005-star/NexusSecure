@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Ban, Plus, Clock, ShieldAlert } from 'lucide-react';
+import { Ban, Plus, Clock, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { StatCard } from '@/components/ui/StatCard';
@@ -89,7 +89,7 @@ export default function BlocklistPage() {
           title="High Certainty IoCs"
           value={highConfidenceCount}
           description="≥ 95% confidence score"
-          icon={<ShieldAlert className="w-4 h-4 text-[#3ecf8e]" />}
+          icon={<AlertTriangle className="w-4 h-4 text-[#3ecf8e]" />}
           trend={{ value: 'Multi-node corroborated', isPositive: true }}
         />
         <StatCard

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Modal } from '../ui/Modal';
 import { Input } from '../ui/Input';
 import { Button } from '../ui/Button';
-import { Copy, Check, Shield, Terminal } from 'lucide-react';
+import { Copy, Check, Lock, Terminal } from 'lucide-react';
 import { MemberSite } from '@/lib/types';
 
 interface RegisterMemberModalProps {
@@ -136,7 +136,7 @@ app.use(
 
           <div className="p-3 bg-[#141414] border border-[#2e2e2e] rounded-xl text-xs space-y-1">
             <div className="font-semibold text-[#3ecf8e] flex items-center gap-1.5">
-              <Shield className="w-3.5 h-3.5 text-[#3ecf8e]" />
+              <Lock className="w-3.5 h-3.5 text-[#3ecf8e]" />
               Privacy-by-Design Promise
             </div>
             <p className="text-[#a0a0a0] leading-snug">

@@ -3,7 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { useSite } from '@/lib/site-context';
-import { ShieldCheck, Zap, Radio, ArrowUpRight, Lock } from 'lucide-react';
+import { Zap, Radio, ArrowUpRight, Lock } from 'lucide-react';
+import { NexusLogo } from './NexusLogo';
 
 export function StatusBanner() {
   const { selectedSite, isPinging, pingCurrentAgent } = useSite();
@@ -14,7 +15,7 @@ export function StatusBanner() {
         {/* Left side: Status badge & site metadata */}
         <div className="flex items-start sm:items-center gap-4">
           <div className="w-11 h-11 rounded-lg bg-[#006239] border border-[#3ecf8e]/30 text-[#3ecf8e] flex items-center justify-center flex-shrink-0">
-            <ShieldCheck className="w-6 h-6 text-[#3ecf8e]" />
+            <NexusLogo className="w-6 h-6 text-[#3ecf8e]" />
           </div>
 
           <div>
