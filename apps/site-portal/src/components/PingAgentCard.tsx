@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useSite } from '@/lib/site-context';
-import { Radio, CheckCircle2, RefreshCw, Terminal, ShieldCheck, Copy, Check } from 'lucide-react';
+import { Radio, CheckCircle2, RefreshCw, Terminal, Zap, Copy, Check } from 'lucide-react';
 
 export function PingAgentCard() {
   const { selectedSite, isPinging, pingCurrentAgent, lastPingResult, addToast } = useSite();
@@ -109,7 +109,7 @@ export function PingAgentCard() {
       ) : (
         <div className="mt-5 bg-[#141414] border border-[#2e2e2e] rounded-xl p-4 flex items-center justify-between">
           <div className="flex items-center gap-2.5 text-xs text-[#a0a0a0]">
-            <ShieldCheck className="w-4 h-4 text-[#3ecf8e]" />
+            <Zap className="w-4 h-4 text-[#3ecf8e]" />
             <span>Click &apos;Ping Node Agent&apos; above to initiate a live telemetry handshake test.</span>
           </div>
           <span className="text-xs font-mono text-[#a0a0a0] hidden sm:inline">

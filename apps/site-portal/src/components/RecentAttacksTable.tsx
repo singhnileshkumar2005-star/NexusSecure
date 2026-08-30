@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useSite } from '@/lib/site-context';
-import { ShieldAlert, CheckCircle2, ArrowUpRight, Plus } from 'lucide-react';
+import { Activity, CheckCircle2, ArrowUpRight, Plus } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 
 export function RecentAttacksTable() {
@@ -59,7 +59,7 @@ export function RecentAttacksTable() {
       <div className="p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-[#262626]">
         <div className="flex items-center gap-2.5">
           <div className="w-7 h-7 rounded-md bg-[#006239]/40 border border-[#3ecf8e]/30 flex items-center justify-center">
-            <ShieldAlert className="w-3.5 h-3.5 text-[#3ecf8e]" />
+            <Activity className="w-3.5 h-3.5 text-[#3ecf8e]" />
           </div>
           <div>
             <h3 className="text-xs font-semibold text-[#ffffff] font-display">

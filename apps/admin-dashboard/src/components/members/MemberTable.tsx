@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import {
   ArrowUpRight,
-  Shield,
+  Lock,
   Copy,
   Check,
   Search,
@@ -169,7 +169,7 @@ export function MemberTable({ members }: MemberTableProps) {
                     {/* Privacy */}
                     <td className="py-3.5 px-4 text-right">
                       <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono bg-[#141414] text-[#3ecf8e] border border-[#2e2e2e]">
-                        <Shield className="w-3 h-3 text-[#3ecf8e]" />
+                        <Lock className="w-3 h-3 text-[#3ecf8e]" />
                         Anonymized
                       </span>
                     </td>

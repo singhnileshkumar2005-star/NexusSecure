@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../ui/Card';
 import { ThreatEvent } from '@/lib/types';
-import { Shield, Radio } from 'lucide-react';
+import { Radio } from 'lucide-react';
+import { NexusLogo } from '../ui/NexusLogo';
 
 interface ThreatRadarProps {
   events: ThreatEvent[];
@@ -84,7 +85,7 @@ export function ThreatRadar({ events, isPaused }: ThreatRadarProps) {
 
           {/* Center Hub Indicator */}
           <div className="relative z-10 w-7 h-7 rounded-full bg-[#006239] text-[#3ecf8e] border border-[#3ecf8e]/40 flex items-center justify-center shadow-lg">
-            <Shield className="w-3.5 h-3.5" />
+            <NexusLogo className="w-3.5 h-3.5 text-[#3ecf8e]" />
           </div>
 
           {/* Attack Blips */}

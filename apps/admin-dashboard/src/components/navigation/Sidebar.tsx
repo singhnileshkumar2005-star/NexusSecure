@@ -4,7 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  Shield,
   LayoutDashboard,
   Ban,
   Users,
@@ -14,6 +13,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Badge } from '../ui/Badge';
+import { NexusLogo } from '../ui/NexusLogo';
 
 interface NavItem {
   name: string;
@@ -61,7 +61,7 @@ export function Sidebar() {
         <div className="h-16 px-6 border-b border-[#262626] flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-7 h-7 rounded-lg bg-[#006239] text-[#3ecf8e] border border-[#3ecf8e]/30 flex items-center justify-center transition-transform group-hover:scale-105">
-              <Shield className="w-4 h-4 text-[#3ecf8e]" />
+              <NexusLogo className="w-4 h-4 text-[#3ecf8e]" />
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-[#ffffff] font-display tracking-tight flex items-center gap-1.5">
@@ -85,7 +85,7 @@ export function Sidebar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3ecf8e] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#3ecf8e]" />
               </span>
-              <span className="text-xs font-medium text-[#ffffff]">Mesh Shield</span>
+              <span className="text-xs font-medium text-[#ffffff]">Mesh Network</span>
             </div>
             <span className="text-[10px] font-mono text-[#3ecf8e] bg-[#006239]/40 px-1.5 py-0.5 rounded border border-[#3ecf8e]/30">
               SYNCHRONIZED

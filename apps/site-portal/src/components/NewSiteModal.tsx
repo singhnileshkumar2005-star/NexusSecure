@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useSite } from '@/lib/site-context';
-import { X, Globe, Shield, ArrowRight } from 'lucide-react';
+import { X, Globe, ArrowRight } from 'lucide-react';
+import { NexusLogo } from './NexusLogo';
 
 interface NewSiteModalProps {
   isOpen: boolean;
@@ -77,7 +78,7 @@ export function NewSiteModal({ isOpen, onClose }: NewSiteModalProps) {
 
         <div className="flex items-center gap-3 mb-5">
           <div className="w-9 h-9 rounded-lg bg-[#006239]/40 border border-[#3ecf8e]/30 flex items-center justify-center flex-shrink-0">
-            <Shield className="w-4 h-4 text-[#3ecf8e]" />
+            <NexusLogo className="w-4 h-4 text-[#3ecf8e]" />
           </div>
           <div>
             <h3 className="text-base font-semibold text-[#ffffff] font-display tracking-tight">

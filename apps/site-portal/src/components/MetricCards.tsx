@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { useSite } from '@/lib/site-context';
-import { ShieldAlert, Shield, Gauge, Award, TrendingUp, CheckCircle } from 'lucide-react';
+import { Activity, Gauge, Award, TrendingUp, CheckCircle } from 'lucide-react';
+import { NexusLogo } from './NexusLogo';
 
 export function MetricCards() {
   const { stats } = useSite();
@@ -35,7 +36,7 @@ export function MetricCards() {
         <div className="flex items-center justify-between">
           <span className="text-xs font-medium text-[#a0a0a0]">Attacks Stopped</span>
           <div className="w-7 h-7 rounded-md bg-[#006239]/40 border border-[#3ecf8e]/30 flex items-center justify-center">
-            <ShieldAlert className="w-3.5 h-3.5 text-[#3ecf8e]" />
+            <Activity className="w-3.5 h-3.5 text-[#3ecf8e]" />
           </div>
         </div>
 
@@ -62,7 +63,7 @@ export function MetricCards() {
         <div className="flex items-center justify-between">
           <span className="text-xs font-medium text-[#a0a0a0]">Site Threat Level</span>
           <div className="w-7 h-7 rounded-md bg-[#141414] border border-[#2e2e2e] flex items-center justify-center">
-            <Shield className="w-3.5 h-3.5 text-[#3ecf8e]" />
+            <NexusLogo className="w-3.5 h-3.5 text-[#3ecf8e]" />
           </div>
         </div>
 

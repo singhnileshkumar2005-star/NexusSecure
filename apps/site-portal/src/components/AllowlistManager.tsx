@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { useSite } from '@/lib/site-context';
 import {
-  ShieldCheck,
+  CheckCircle2,
   Plus,
   Trash2,
   Search,
@@ -82,7 +82,7 @@ export function AllowlistManager() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex items-start gap-3">
             <div className="w-10 h-10 rounded-lg bg-[#006239]/40 border border-[#3ecf8e]/30 flex items-center justify-center flex-shrink-0">
-              <ShieldCheck className="w-5 h-5 text-[#3ecf8e]" />
+              <CheckCircle2 className="w-5 h-5 text-[#3ecf8e]" />
             </div>
             <div>
               <h2 className="text-sm font-semibold text-[#ffffff] font-display tracking-tight">

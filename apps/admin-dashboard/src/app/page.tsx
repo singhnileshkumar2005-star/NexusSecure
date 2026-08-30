@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Shield, ShieldAlert, Users, Activity } from 'lucide-react';
+import { Ban, Users, Activity } from 'lucide-react';
+import { NexusLogo } from '@/components/ui/NexusLogo';
 import { StatCard } from '@/components/ui/StatCard';
 import { Badge } from '@/components/ui/Badge';
 import { ShieldStatusBanner } from '@/components/overview/ShieldStatusBanner';
@@ -60,7 +61,7 @@ export default function OverviewPage() {
           title="Total Mitigations"
           value={formatNumber(stats.totalAttacksMitigated)}
           description="Across all member websites"
-          icon={<Shield className="w-4 h-4 text-[#3ecf8e]" />}
+          icon={<NexusLogo className="w-4 h-4 text-[#3ecf8e]" />}
           trend={{ value: '+18.4% this week', isPositive: true }}
           badge={
             <Badge variant="outline" size="sm" className="border-[#2e2e2e] text-[#a0a0a0]">
@@ -74,7 +75,7 @@ export default function OverviewPage() {
           title="Active Blocked IPs"
           value={stats.activeBlockedIps}
           description="Live distributed IoCs"
-          icon={<ShieldAlert className="w-4 h-4 text-[#3ecf8e]" />}
+          icon={<Ban className="w-4 h-4 text-[#3ecf8e]" />}
           trend={{ value: 'Auto-expiring (48h TTL)', isNeutral: true }}
           badge={
             <Badge variant="black" size="sm">
